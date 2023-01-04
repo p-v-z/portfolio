@@ -5,6 +5,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "headwind.runOnSave": false,
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0c3565",
+    "titleBar.activeBackground": "#1d4f77",
+    "titleBar.activeForeground": "#F9FCF7"
+  }
 }
