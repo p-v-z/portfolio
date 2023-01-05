@@ -1,21 +1,13 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  title: 'Petrie van Zyl Portfolio',
+  siteName: 'P3 Portfolio',
+  description: 'An online portfolio webpage for Petrie van Zyl',
+  url: 'https://github/p-v-z/portfolio',
   type: 'website',
   robots: 'follow, index',
-  /**
-   * No need to be filled, will be populated with openGraph function
-   * If you wish to use a normal image, just specify the path below
-   */
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
 };
 
 type SeoProps = {
@@ -56,13 +48,6 @@ export default function Seo(props: SeoProps) {
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
-      {/* Twitter */}
-      <meta name='twitter:card' content='summary_large_image' />
-      {/* // !STARTERCONF Remove or change to your handle */}
-      {/* <meta name='twitter:site' content='@th_clarence' /> */}
-      <meta name='twitter:title' content={meta.title} />
-      <meta name='twitter:description' content={meta.description} />
-      <meta name='twitter:image' content={meta.image} />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
@@ -71,11 +56,10 @@ export default function Seo(props: SeoProps) {
             property='og:publish_date'
             content={meta.date}
           />
-          {/* // !STARTERCONF Remove or change to your name */}
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Petrie van Zyl'
           />
         </>
       )}
@@ -85,14 +69,11 @@ export default function Seo(props: SeoProps) {
         <link key={linkProps.href} {...linkProps} />
       ))}
       <meta name='msapplication-TileColor' content='#ffffff' />
-      <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
       <meta name='theme-color' content='#ffffff' />
     </Head>
   );
 }
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-// ! then replace the whole /public/favicon folder and favicon.ico
 const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'apple-touch-icon',
@@ -112,10 +93,5 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     href: '/favicon/favicon-16x16.png',
   },
   { rel: 'manifest', href: '/favicon/site.webmanifest' },
-  {
-    rel: 'mask-icon',
-    href: '/favicon/safari-pinned-tab.svg',
-    color: '#00e887',
-  },
   { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
 ];
