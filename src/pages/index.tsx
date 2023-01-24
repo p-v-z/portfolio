@@ -2,18 +2,12 @@ import * as React from 'react';
 
 import { Header } from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
+import { Resume } from '@/components/layout/Resume';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
 import Fountain from '~/svg/fountain.svg';
 
 export default function HomePage() {
@@ -22,8 +16,8 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <div className='fixed inset-0 flex justify-center sm:px-8'>
-        <div className='flex w-full max-w-7xl lg:px-8'>
+      <div className='fixed inset-0 flex justify-center'>
+        <div className='flex w-full'>
           <div className='w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20' />
         </div>
       </div>
@@ -50,6 +44,7 @@ export default function HomePage() {
               </p>
               <p className='mt-2 text-sm text-gray-700'></p>
 
+              <Resume />
               <Fountain className='text-9xl' />
 
               <div className='layout mx-auto flex max-w-7xl flex-col px-4 sm:px-6 lg:px-8'>
