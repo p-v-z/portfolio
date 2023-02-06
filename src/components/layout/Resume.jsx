@@ -7,35 +7,35 @@ import jobSvg from '~/svg/fountain.svg';
 export function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Fuzzy Logic Studio',
+      title: 'Unity C# Developer',
       logo: jobSvg,
-      start: '2019',
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Rank Interactive',
+      title: 'Full Stack Developer',
       logo: jobSvg,
-      start: '2014',
-      end: '2019',
+      start: '2019',
+      end: '2021',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
+      company: 'Front End Engineer',
+      title: 'BBD',
       logo: jobSvg,
-      start: '2011',
-      end: '2014',
+      start: '2019',
+      end: '2018',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'Software Developer',
+      title: 'CodeForte',
       logo: jobSvg,
-      start: '2008',
-      end: '2011',
+      start: '2018',
+      end: '2016',
     },
   ];
 
