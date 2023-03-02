@@ -54,7 +54,7 @@ export function Resume() {
             </div>
             <dl className='flex flex-auto flex-wrap gap-x-2'>
               <dt className='sr-only'>Company</dt>
-              <dd className='w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100'>
+              <dd className='w-full flex-none text-sm font-medium text-blue-900 dark:text-blue-100'>
                 {role.company}
               </dd>
               <dt className='sr-only'>Role</dt>
@@ -81,7 +81,7 @@ export function Resume() {
         ))}
       </ol>
       <DownloadButton
-        href='#'
+        href='/pvz-resume-feb-2023.pdf'
         variant='secondary'
         className='group mt-6 w-full'
       >

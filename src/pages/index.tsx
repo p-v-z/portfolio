@@ -8,6 +8,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
+import Construction from '~/svg/construction.svg';
 import Fountain from '~/svg/fountain.svg';
 
 export default function HomePage() {
@@ -27,7 +28,7 @@ export default function HomePage() {
           {' '}
           <section className='bg-white'>
             <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-              <p className='mt-2 text-sm text-gray-800'>
+              <p className='mt-10 text-sm text-gray-800'>
                 Since I was a child, I have had a lifelong passion for computer
                 technologies, particularly in the realm of video games. I have
                 honed my skills in design, visual, audio, and logical reasoning
@@ -44,31 +45,28 @@ export default function HomePage() {
               </p>
               <p className='mt-2 text-sm text-gray-700'></p>
 
+              <Fountain className='mb-5 text-8xl' />
               <Resume />
-              <Fountain className='text-9xl' />
-
-              <div className='layout mx-auto flex max-w-7xl flex-col px-4 sm:px-6 lg:px-8'>
-                <div className='mx-auto max-w-3xl'>
-                  <ButtonLink
-                    className='mt-6 flex-auto'
-                    href='/components'
-                    variant='light'
-                  >
-                    See all components
-                  </ButtonLink>
-                  <br />
-                  <ArrowLink
-                    className='mt-5 flex-auto'
-                    href='https://github.com/p-v-z/portfolio'
-                  >
-                    See the repository
-                  </ArrowLink>
-                  <br />
-                </div>
+              <div className='svg-container'>
+                <Construction className='text-9xl' />
               </div>
 
               <footer className='absolute bottom-2 items-center justify-center text-center text-gray-700'>
-                © {new Date().getFullYear()} By{' '}
+                <ButtonLink
+                  className='mt-6 flex-auto'
+                  href='/components'
+                  variant='light'
+                >
+                  See all components
+                </ButtonLink>
+                <br />
+                <ArrowLink
+                  className='mt-5 flex-auto'
+                  href='https://github.com/p-v-z/portfolio'
+                >
+                  See the repository
+                </ArrowLink>
+                <br />© {new Date().getFullYear()} By{' '}
                 <UnderlineLink href='https://github.com/p-v-z'>
                   Petrie van Zyl
                 </UnderlineLink>
@@ -76,8 +74,6 @@ export default function HomePage() {
             </div>
           </section>
         </main>
-
-        {/* <Footer /> */}
       </div>
     </Layout>
   );
